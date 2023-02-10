@@ -75,6 +75,6 @@ class Model extends Generator implements GeneratorInterface
      */
     public function getStubPath(int $laravelVersion): string
     {
-        return __DIR__ . '/../../../../stubs/view-model.stub';
+        return $this->getStubRootPath() .'/view-model.stub';
     }
 }

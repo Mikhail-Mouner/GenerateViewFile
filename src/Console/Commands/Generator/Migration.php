@@ -73,6 +73,6 @@ class Migration extends Generator implements GeneratorInterface
      */
     public function getStubPath(int $laravelVersion): string
     {
-        return __DIR__ . '/../../../../stubs/view-migration-' . $laravelVersion . '.stub';
+        return $this->getStubRootPath().'/view-migration-' . $laravelVersion . '.stub';
     }
 }

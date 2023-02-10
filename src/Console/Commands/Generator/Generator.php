@@ -108,4 +108,12 @@ class Generator
     {
         return Str::snake($this->getClassName($name));
     }
+
+    public function getStubRootPath(): string
+    {
+        $path = app_path('stubs/');
+        if ($this->files->exists($path))
+            return $path;
+        return __DIR__ . '/../../../../stubs';
+    }
 }
