@@ -1,0 +1,20 @@
+{
+    "name": "mikhail-mouner/generate-view-file",
+    "description": "This package is a useful tool to generate View Migration File & Model File",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MikhailMouner\\GenerateViewFile\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mikhail-Mouner",
+            "email": "mikhaeelmouner@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}
