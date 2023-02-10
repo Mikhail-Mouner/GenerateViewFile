@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Models\Views;
+
+use Illuminate\Database\Eloquent\Model;
+
+class View$CLASS_NAME$ extends Model
+{
+    public $table = 'v_$VIEW_NAME$';
+    public $timestamps = false;
+    public $primaryKey = null;
+}
