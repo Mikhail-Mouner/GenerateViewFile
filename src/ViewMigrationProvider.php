@@ -24,6 +24,14 @@ class ViewMigrationProvider extends ServiceProvider
      */
     public function boot()
     {
+        $appPath = __DIR__ . '/../stubs/view-migration.stub';
 
+        $this->publishes([
+            $appPath => app_path('stubs/view-migration.stub')
+        ], 'view-stubs');
+
+        $this->commands([
+            MakeViewFile::class,
+        ]);
     }
 }
