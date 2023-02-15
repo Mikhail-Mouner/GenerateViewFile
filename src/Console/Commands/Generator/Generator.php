@@ -5,7 +5,7 @@ namespace MikhailMouner\GenerateViewFile\Console\Commands\Generator;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
-class Generator
+abstract class Generator implements GeneratorInterface
 {
     /**
      * The Filesystem variable.
@@ -116,4 +116,10 @@ class Generator
             return $path;
         return __DIR__ . '/../../../../stubs';
     }
+
+    abstract public function getFilePath(string $name): string;
+
+    abstract public function getStubVariables(string $name): array;
+
+    abstract public function getStubPath(int $laravelVersion): string;
 }

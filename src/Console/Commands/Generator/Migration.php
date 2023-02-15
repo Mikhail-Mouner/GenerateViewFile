@@ -2,7 +2,7 @@
 
 namespace MikhailMouner\GenerateViewFile\Console\Commands\Generator;
 
-class Migration extends Generator implements GeneratorInterface
+class Migration extends Generator
 {
     protected string $name;
     protected int $laravelVersion;

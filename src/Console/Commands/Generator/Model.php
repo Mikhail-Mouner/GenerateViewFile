@@ -4,7 +4,7 @@ namespace MikhailMouner\GenerateViewFile\Console\Commands\Generator;
 
 use Illuminate\Support\Str;
 
-class Model extends Generator implements GeneratorInterface
+class Model extends Generator
 {
     protected string $name;
     protected int $laravelVersion;
